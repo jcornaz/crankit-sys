@@ -14,8 +14,8 @@ run-hello-world:
 
 # Run the tests
 test:
-	cargo hack test --tests --feature-powerset 
-	cargo test --examples --all-features
+	cargo hack check --feature-powerset
+	cargo hack test --tests --feature-powerset
 	cargo test --doc --all-features
 
 # Run the static code analysis
