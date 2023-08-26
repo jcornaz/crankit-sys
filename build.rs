@@ -12,7 +12,7 @@ fn main() {
         .use_core()
         .header("wrapper.h")
         .default_enum_style(EnumVariation::Rust {
-            non_exhaustive: true,
+            non_exhaustive: false,
         })
         .allowlist_type("PlaydateAPI")
         .allowlist_type("PDSystemEvent")

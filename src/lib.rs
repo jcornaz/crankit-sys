@@ -12,3 +12,10 @@
 //! * `clang` must be installed
 
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
+
+#[no_mangle]
+#[doc(hidden)]
+#[cfg(not(test))]
+extern "C" fn rust_eh_personality() {
+    unimplemented!()
+}
