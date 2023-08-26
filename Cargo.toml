@@ -1,11 +1,11 @@
 [package]
-name = "rust-template"
+name = "crankit-sys"
 version = "0.0.0"
 license = "Unlicense"
 authors = ["Jonathan Cornaz"]
 edition = "2021"
-rust-version = "1.71"
-repository = "https://github.com/jcornaz/rust-template"
+rust-version = "1.72"
+repository = "https://github.com/jcornaz/crankit-sys"
 description = ""
 categories = []
 keywords = []
@@ -17,3 +17,6 @@ rustdoc-args = ["--cfg", "docsrs"]
 [dependencies]
 
 [dev-dependencies]
+
+[build-dependencies]
+bindgen = "0.66.1"
