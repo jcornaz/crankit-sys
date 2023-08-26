@@ -2,9 +2,10 @@
 
 ![rustc](https://img.shields.io/badge/rustc-1.72+-blue?logo=rust)
 
-Generated bindings for the [playdate C API](https://sdk.play.date/inside-playdate-with-c)
+Rust bindings for the [playdate C API](https://sdk.play.date/inside-playdate-with-c),
+generated at build-time based on the playdate SDK found at `$PLAYDATE_SDK_PATH`.
 
-# Requirements
+## Requirements
 
 The bindings are generated at build-time and require:
 
