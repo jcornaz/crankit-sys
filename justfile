@@ -56,3 +56,21 @@ release *args: verify
     test $GITHUB_TOKEN
     test $CARGO_REGISTRY_TOKEN
     cargo release {{args}}
+
+generate-bindings-x86_64: (generate-bindings "x86_64")
+generate-bindings-aarch64: (generate-bindings "aarch64")
+generate-bindings-playdate: (generate-bindings "thumbv7em-none-eabihf")
+
+generate-bindings target:
+	bindgen wrapper.h \
+		--use-core \
+		--default-enum-style rust \
+		--allowlist-type PlaydateAPI \
+		--allowlist-type PDSystemEvent \
+		--allowlist-type LCDSolidColor \
+		--allowlist-type LCDColor \
+		--allowlist-type LCDPattern \
+		--allowlist-var LCD_COLUMNS \
+		--allowlist-var LCD_ROWS \
+		--bitfield-enum PDButtons \
+		-- -DTARGET_EXTENSION -I$PLAYDATE_SDK_PATH/C_API -target {{target}}
