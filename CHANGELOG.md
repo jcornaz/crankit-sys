@@ -7,5 +7,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+Rust bindings for the playdate C API.
 
 [Unreleased]: https://github.com/jcornaz/crankit-sys/compare/...HEAD

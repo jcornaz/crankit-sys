@@ -2,16 +2,21 @@
 
 ![rustc](https://img.shields.io/badge/rustc-1.72+-blue?logo=rust)
 
+Generated bindings for the [playdate C API](https://sdk.play.date/inside-playdate-with-c)
 
-Generated rust bindings for the playdate C API
+# Requirements
 
+The bindings are generated at build-time and require:
+
+* [Playdate SDK](https://play.date/dev/#cardSDK) must be installed
+* An environment variable `PLAYDATE_SDK_PATH` must point to the playdate SDK installation folder
+* `clang` must be installed
 
 ## MSRV
 
 The minimum supported rust version is currently `1.72`.
 
 It will be updated when required, and that will not be considered a breaking change (it can happen in a minor version).
-
 
 ## Unlicense
 

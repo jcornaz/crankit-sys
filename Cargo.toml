@@ -6,17 +6,9 @@ authors = ["Jonathan Cornaz"]
 edition = "2021"
 rust-version = "1.72"
 repository = "https://github.com/jcornaz/crankit-sys"
-description = ""
-categories = []
-keywords = []
-
-[package.metadata.docs.rs]
-all-features = true
-rustdoc-args = ["--cfg", "docsrs"]
-
-[dependencies]
-
-[dev-dependencies]
+description = "Generated bindings for the playdate C API"
+categories = ["external-ffi-bindings", "game-development"]
+keywords = ["playdate", "gamedev", "ffi", "no_std"]
 
 [build-dependencies]
 bindgen = "0.66.1"
