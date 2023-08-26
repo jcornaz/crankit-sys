@@ -1,11 +1,21 @@
 #![no_std]
 
+//! This example show a ball on the center of the screen
+//! that continuously move and can be steered with the crank.
+//!
+//! It serves the purpose of a manual sanity test of the generated bindings.
+//!
+//! The example can be run using the [crank cli](https://github.com/pd-rs/crank) like this:
+//!
+//! `crank run --example hello_world`
+
 extern crate alloc;
 
-use alloc::ffi::CString;
-use alloc::format;
-use core::alloc::{GlobalAlloc, Layout};
-use core::ptr;
+use alloc::{ffi::CString, format};
+use core::{
+    alloc::{GlobalAlloc, Layout},
+    ptr,
+};
 
 use libm::{cosf, sinf};
 
