@@ -23,5 +23,9 @@ panic = "abort"
 panic = "abort"
 
 [[example]]
+name = "minimal"
+crate-type = ["staticlib", "cdylib"]
+
+[[example]]
 name = "hello_world"
 crate-type = ["staticlib", "cdylib"]

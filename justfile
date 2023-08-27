@@ -8,6 +8,10 @@ verify: test lint doc check-msrv
 watch:
 	cargo watch --delay 0.1 --clear --why -- just verify
 
+# Run the 'miminal' example
+run-minimal:
+    crank run --example minimal
+
 # Run the 'hello world' example
 run-hello-world:
     crank run --example hello_world

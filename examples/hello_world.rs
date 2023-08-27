@@ -5,9 +5,7 @@
 //!
 //! It serves the purpose of a manual sanity test of the generated bindings.
 //!
-//! The example can be run using the [crank cli](https://github.com/pd-rs/crank) like this:
-//!
-//! `crank run --example hello_world`
+//! The example can be run using the [crank cli](https://github.com/pd-rs/crank): `crank run --example hello_world`
 
 extern crate alloc;
 
