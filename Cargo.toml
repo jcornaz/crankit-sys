@@ -11,7 +11,7 @@ categories = ["external-ffi-bindings", "game-development"]
 keywords = ["playdate", "gamedev", "ffi", "no_std"]
 
 [dev-dependencies]
-libm = "0.2.7"
+libm = "0.2.8"
 
 [build-dependencies]
 bindgen = "0.68.1"
