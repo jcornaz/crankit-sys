@@ -5,6 +5,11 @@
 Rust bindings for the [playdate C API](https://sdk.play.date/inside-playdate-with-c),
 generated at build-time based on the playdate SDK found at `$PLAYDATE_SDK_PATH`.
 
+## Status: Discontinued
+
+This project is discontinued in favor of [`playdate-sys`](https://crates.io/crates/playdate-sys)
+
+
 ## Requirements
 
 The bindings are generated at build-time and require:
