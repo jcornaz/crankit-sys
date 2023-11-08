@@ -14,7 +14,7 @@ keywords = ["playdate", "gamedev", "ffi", "no_std"]
 libm = "0.2.8"
 
 [build-dependencies]
-bindgen = "0.68.1"
+bindgen = "0.69.1"
 
 [profile.dev]
 panic = "abort"
