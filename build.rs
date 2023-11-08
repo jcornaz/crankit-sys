@@ -22,7 +22,7 @@ fn main() {
         .allowlist_var("LCD_COLUMNS")
         .allowlist_var("LCD_ROWS")
         .bitfield_enum("PDButtons")
-        .parse_callbacks(Box::new(bindgen::CargoCallbacks))
+        .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
         .clang_arg(format!("-I{}", c_api_path.display()))
         .clang_arg("-DTARGET_EXTENSION")
         .generate()
