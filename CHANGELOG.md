@@ -7,6 +7,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Annonce
+
+The project is now dicontinued.
+
+I recomend using [`playdate-sys`](https://crates.io/crates/playdate-sys) instead.
 
 ## [1.0.0-rc.2] - 2023-08-27
 
