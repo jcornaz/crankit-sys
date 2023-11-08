@@ -4,6 +4,7 @@
     "config:base",
     ":automergePatch"
   ],
+  "enabled": false,
   "timezone": "Europe/Zurich",
   "schedule": [
     "after 10pm",
