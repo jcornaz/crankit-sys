@@ -10,11 +10,11 @@ watch:
 
 # Run the 'miminal' example
 run-minimal:
-    crank run --example minimal
+    cargo +nightly playdate run --example minimal
 
 # Run the 'hello world' example
 run-hello-world:
-    crank run --example hello_world
+    cargo +nightly playdate run --example hello_world
 
 # Run the tests
 test:

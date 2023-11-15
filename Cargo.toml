@@ -10,6 +10,9 @@ description = "Generated bindings for the playdate C API"
 categories = ["external-ffi-bindings", "game-development"]
 keywords = ["playdate", "gamedev", "ffi", "no_std"]
 
+[package.metadata.playdate]
+bundle-id = "com.github.jcornaz.crankit-sys"
+
 [dev-dependencies]
 libm = "0.2.8"
 
